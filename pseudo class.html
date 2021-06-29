@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charest="utf-8">
+<title>combinator selector</title>
+<style type="text/css">
+p:hover{
+color:blue;
+background-color:yellow;
+}
+
+ p:first-child{
+color:red;
+background-color:blue;
+}
+#div1 p:last-child{
+color:yellow;
+
+}
+#div2 p:nth-child(3){
+color:pink;
+background-color:green;
+}
+input:enabled{
+
+background-color:pink;
+
+}
+
+input:disabled{
+background-color:red;
+
+
+}
+
+input:focus{
+border:5px dotted royalblue;
+}
+input checked{
+width:20px;
+height:30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Pseudo-classes</h1>
+
+<p>first paragraph</p>
+<p>We recommend reading this tutorial, in the sequence listed in the menu.
+If you have a large screen, the menu will always be present on the left.
+If you have a small screen, open the menu by clicking the top menu sign. </p>
+
+<div id="div1">
+    <p>descendent selector</p>
+<p>descendent selector</p>
+<p>descendent selector</p>
+<div><p>descendent selector</p></div>
+<section><p>descendent selector</p></section>
+<span>descendent selector</span>
+<p>last paragraph in first div</p>
+</div>
+
+<div id="div2">
+    <p>first paragraphin second div</p>
+<p>descendent selector</p>
+<p>third paragraph in second div</p>
+<div><p>descendent selector</p></div>
+<section><p>descendent selector</p></section>
+<span>descendent selector</span>
+<p>last paragraph in second div </p>
+</div>
+<h1>Register</h1>
+
+<form>
+<pre>
+
+<label>Name</label>
+<input type="text" name="name"  readonly value="pavitra">
+
+<label>Mobile No</label>
+<input type="Number" name="mobile" required>
+
+<label>Email</label>
+<input type="email" name="email"  disabled>
+
+<label>Gender</label>
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female
+<input type="radio" name="gender" value="others">Others
+
+<label>Password</label>
+<input type="password" name="password">
+
+<input type="submit" name="submit">
+
+</pre>
+
+
+
+</form>
+
+</body>
+</html>
